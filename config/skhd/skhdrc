@@ -1,0 +1,28 @@
+alt - j : yabai -m  window --focus south
+alt - k : yabai -m window --focus north
+alt - h : yabai -m window --focus west
+alt - l : yabai -m window --focus east
+
+
+alt - a : yabai -m display --focus west
+alt - s : yabai -m display --focus east
+
+shift + alt - r : yabai -m space --rotate 270
+
+shift + alt - y : yabai -m space --mirror y-axis
+
+shift + alt - x : yabai -m space --mirror x-axis
+
+shift + alt - t : yabai -m window --toggle float --grid -1:4:1:2:2
+
+shift + alt - m : yabai -m window --toggle zoom-fullscreen
+
+# Move windows between displays
+
+shift + alt - a : yabai -m window --display west; yabai -m display --focus west;
+
+shift + alt - s : yabai -m window --display east; yabai -m display --focus east;
+
+ctrl + shift + alt - up    : osascript -e "set Volume output volume (output volume of (get volume settings) + 5)"
+ctrl + shift + alt - down  : osascript -e "set Volume output volume (output volume of (get volume settings) - 5)"
+ctrl + shift + alt - m     : osascript -e "set volume output volume 0"  # Mute
